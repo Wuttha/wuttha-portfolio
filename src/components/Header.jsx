@@ -1,4 +1,5 @@
 import React from "react";
+import cv_wuttha from "../assets/download/CV_WUTTHA.pdf";
 
 const Header = () => {
   const menuFunction = () => {
@@ -40,9 +41,11 @@ const Header = () => {
         </ul>
       </div>
       <div className="nav-button">
-        <button className="btn">
-          Download CV <i className="uil uil-import"></i>
-        </button>
+        <a href={cv_wuttha} target="_blank">
+          <button className="btn">
+            Download CV <i className="uil uil-import"></i>
+          </button>
+        </a>
       </div>
       <div className="nav-menu-btn">
         <i className="uil uil-bars" onClick={menuFunction}></i>
